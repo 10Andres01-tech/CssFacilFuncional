@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura y sintaxis de CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        body {
+            background-color: #E8F1F2;
+            color: #102A36;
+            font-family: Arial, sans-serif;
+        }
+
+        .caja1 {
+            background-color: #087E8B;
+            min-height: 90px;
+            padding: 15px;
+        }
+
+        .btn-nav {
+            color: white;
+            text-decoration: none;
+            border: 2px solid white;
+            border-radius: 8px;
+            padding: 10px 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn-nav:hover {
+            background-color: white;
+            color: #087E8B;
+        }
+
+        .contenido {
+            max-width: 1100px;
+            margin: auto;
+            padding: 35px 20px;
+        }
+
+        h1, h2 {
+            color: #087E8B;
+            font-weight: bold;
+        }
+
+        h1 { margin-bottom: 20px; }
+        h2 { font-size: 25px; margin-top: 30px; margin-bottom: 12px; }
+
+        p {
+            font-size: 17px;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        .ejemplo {
+            background-color: #D2E9E2;
+            border-left: 5px solid #087E8B;
+            border-radius: 8px;
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        pre {
+            margin: 0;
+            color: #102A36;
+            font-size: 16px;
+        }
+
+        .volver {
+            display: inline-block;
+            background-color: #087E8B;
+            color: white;
+            text-decoration: none;
+            padding: 12px 22px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 25px;
+        }
+
+        .volver:hover {
+            background-color: #155E75;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="caja1 d-flex flex-wrap align-items-center justify-content-center gap-2">
+        <a class="btn-nav" href="index.html">Inicio <i class="bi bi-house"></i></a>
+        <a class="btn-nav" href="estructura.html">Estructura y sintaxis <i class="bi bi-code-slash"></i></a>
+        <a class="btn-nav" href="especificidad.html">Niveles de especificidad <i class="bi bi-layers"></i></a>
+        <a class="btn-nav" href="pseudo.html">Pseudo Clases y Pseudo Elementos <i class="bi bi-cursor"></i></a>
+        <a class="btn-nav" href="Boxmodel.html">Box Model <i class="bi bi-bounding-box"></i></a>
+    </nav>
+
+    <main class="contenido">
+        <h1>Estructura y sintaxis de CSS</h1>
+
+        <h2>¿Qué es?</h2>
+        <p>CSS (Cascading Style Sheets u hojas de estilo en cascada) es un lenguaje que se utiliza para dar diseño y apariencia a las páginas web. Permite modificar colores, tamaños, espacios, fuentes y la distribución de los elementos HTML.</p>
+
+        <h2>¿Para qué sirve?</h2>
+        <p>Sirve para separar el contenido de una página web de su presentación visual. HTML organiza la información y CSS define cómo se verá, haciendo que el sitio sea más atractivo, ordenado y fácil de utilizar.</p>
+
+        <h2>¿Cómo funciona?</h2>
+        <p>CSS funciona mediante reglas que indican qué elementos HTML se van a modificar y qué estilos se les aplicarán. El navegador lee esas reglas y muestra la página con el diseño establecido.</p>
+
+        <h2>¿Cuál es su estructura?</h2>
+        <p>Una regla CSS está formada por un selector y un bloque de declaraciones. El selector identifica el elemento HTML; dentro de las llaves se escriben las propiedades y sus valores.</p>
+
+        <div class="ejemplo">
+            <pre><code>h1 {
+    color: blue;
+    font-size: 32px;
+}</code></pre>
+        </div>
+
+        <h2>Partes de una regla CSS</h2>
+        <ul>
+            <li><strong>Selector:</strong> indica a qué elemento HTML se aplicará el estilo. En el ejemplo, es <code>h1</code>.</li>
+            <li><strong>Propiedad:</strong> define qué característica se desea cambiar, como <code>color</code> o <code>font-size</code>.</li>
+            <li><strong>Valor:</strong> establece el resultado de la propiedad, como <code>blue</code> o <code>32px</code>.</li>
+            <li><strong>Declaración:</strong> es la combinación de una propiedad y un valor, terminada en punto y coma.</li>
+            <li><strong>Bloque de declaraciones:</strong> es el conjunto de declaraciones que se encuentra entre llaves.</li>
+        </ul>
+
+        <h2>Importancia de la sintaxis</h2>
+        <p>Es importante escribir correctamente la sintaxis para que el navegador pueda interpretar los estilos. Cada regla debe tener sus llaves, dos puntos entre la propiedad y el valor, y punto y coma al finalizar cada declaración.</p>
+
+        <a class="volver" href="index.html"><i class="bi bi-arrow-left"></i> Volver al inicio</a>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
